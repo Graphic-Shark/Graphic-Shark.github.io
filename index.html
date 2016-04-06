@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-	</head>
-	<body>
-		<h1>Sup?</h1>
-		<p>This be my hosted GitHub Page.</p>
-	</body>
-</html>
+--- 
+ layout: default
+---
+
+<section class="home">
+    <section class="main-header">
+        <div class="gradient-overlay"></div>
+        <div class="center-bar">
+           <div class="circle-container">
+               {% include circle.html %}
+           </div>
+            <div class="bar-bg">
+                <div class="bar-image"></div>
+            </div>
+            <img src="assets/images/center-graphic.png">
+            <div class="secondary-nav">
+                <a href="#" class="nav-link">About Me</a>
+                <a href="" class="nav-link">Portfolio</a>
+                <a href="" class="nav-link">Blog</a>
+            </div>
+        </div>
+    </section>
+</section>

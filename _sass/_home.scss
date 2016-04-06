@@ -1,0 +1,127 @@
+/*
+*/
+
+.main-header {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url(../assets/images/beach-bg.jpg);
+    background-size: cover;
+    top: 0;
+    left: 0;
+    .gradient-overlay {
+        background: rgba(39, 169, 224, 1);
+        background: -moz-linear-gradient(top, rgba(39, 169, 224, 1) 0%, rgba(209, 219, 189, 1) 78%, rgba(209, 219, 189, 1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(39, 169, 224, 1)), color-stop(78%, rgba(209, 219, 189, 1)), color-stop(100%, rgba(209, 219, 189, 1)));
+        background: -webkit-linear-gradient(top, rgba(39, 169, 224, 1) 0%, rgba(209, 219, 189, 1) 78%, rgba(209, 219, 189, 1) 100%);
+        background: -o-linear-gradient(top, rgba(39, 169, 224, 1) 0%, rgba(209, 219, 189, 1) 78%, rgba(209, 219, 189, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(39, 169, 224, 1) 0%, rgba(209, 219, 189, 1) 78%, rgba(209, 219, 189, 1) 100%);
+        background: linear-gradient(to bottom, rgba(39, 169, 224, 1) 0%, rgba(209, 219, 189, 1) 78%, rgba(209, 219, 189, 1) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.4;
+    }
+    .center-bar {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        &:before, &:after{
+            width:calc( 50% - 310px);
+            content:"";   
+            position: absolute;
+            top:50%;
+            transform: translateY(50%);
+            height: 1px;
+            background-color:$sea-foam;
+        }
+        &:before{
+            left:0;
+        }
+        &:after{
+            right: 0;
+        }
+        .bar-bg {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 85%;
+            transform: translateY(-50%);
+            z-index: -1;
+            background: rgba(0, 0, 0, 1);
+            background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 1) 100%);
+            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(50%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 1)));
+            background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 1) 100%);
+            background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 1) 100%);
+            background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 1) 100%);
+            background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 1) 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .bar-image {
+            height: 100%;
+            width: 100%;
+            background-image: url(../assets/images/cartographer.png);
+            background-repeat: repeat;
+            opacity: 0.8;
+            z-index: 50;
+        }
+        img {
+            width: 80%;
+            margin: auto;
+            display: block;
+            max-width: 600px;
+            z-index: 5;
+        }
+    }
+    .circle-svg{
+       transform: scale(1.5);
+        &:first-child{
+                float: left;
+            }
+            
+            &:last-child{
+                float: right;
+            }
+    }
+    .circle-item{
+        fill:none;
+        stroke:$sea-foam;
+        stroke-miterlimit:10;
+        &.dashed{
+            stroke-dasharray: 7.66 7.66;
+        }
+    }
+       
+    .circle-top{
+        position: absolute;
+        top:-200px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 1200px;
+    }
+    .circle-bottom{
+        position: absolute;
+        bottom:-180px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 1200px;
+         .circle-item{
+            stroke: $dark-blue;
+        }
+    }
+    .secondary-nav{
+        position: absolute;
+        display: inline-block;
+        bottom: -100px;
+        left: 50%;
+        transform:translateX(-50%);
+    }
+}
