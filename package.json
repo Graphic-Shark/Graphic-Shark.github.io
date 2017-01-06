@@ -1,0 +1,17 @@
+{
+  "name": "graphicshark.com",
+  "version": "0.0.1",
+  "description": "Capstone website project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ethan Evans",
+  "license": "ISC",
+  "devDependencies": {
+    "glup": "^1.0.14",
+    "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.10",
+    "node-sass": "^3.10.1"
+  }
+}
