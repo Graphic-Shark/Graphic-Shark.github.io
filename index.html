@@ -133,18 +133,6 @@
             <h1>Portfolio Work</h1>
             <hr>
 
-            <script type="text/ng-template" id="myModalContent.html">
-              <div class="modal-header">
-                <h3 class="modal-title" id="modal-title">Headline 01</h3>
-                <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
-              </div>
-              <div class="modal-body" id="modal-body">
-                <img src="img/work/ranlife/ranlifeThumbnail.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </script>
-
             <div  ng-controller="ModalDemoCtrl as $ctrl" ng-cloak>
               <div class="col-xs-12 || col-sm-4 || col-md-3" ng-repeat="work in $ctrl.works track by work.id">
                 <a href="" class="work-item" ng-click="$ctrl.open('lg', work.link)">

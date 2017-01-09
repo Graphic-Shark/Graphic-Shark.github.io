@@ -10,13 +10,13 @@ angular.module('gShark')
     var works = [
       {
         id: 001,
-        link: 'myModalContent.html',
+        link: 'work/ranlife-main.html',
         img: 'img/work/ranlife/ranlifeThumbnail.jpg',
         header: 'RANLife Redesign',
         body: 'Complete redesign of the main RANLife website. This inculded creating new brand colors and udated visuals.'
       },{
         id: 002,
-        link: '*',
+        link: 'work/BeaconHomes.html',
         img: 'img/work/beaconHomes/BH-HomeThumbnail.jpg',
         header: 'Beacon Homes Redesign',
         body: 'Redesign of Beacon Homes builder main website. built in Angular JS functinality and established new branding colors.'
