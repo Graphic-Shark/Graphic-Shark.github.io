@@ -323,6 +323,9 @@ header {
 .modal-footer {
   background-color: #D2DBBD; }
 
+.m-body {
+  background-color: #D2DBBD; }
+
 footer {
   bottom: 0;
   display: block;

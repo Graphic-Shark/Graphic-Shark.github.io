@@ -25,42 +25,42 @@ $gs-body: 'Open Sans', sans-serif;
 
 
 body {
-	color: $gs-blue;
-	height: 100%;
-	font-family: $gs-body;
-	background-color: $gs-beach;
-	background-image: url(../img/countourlines-pattern.png);
+  color: $gs-blue;
+  height: 100%;
+  font-family: $gs-body;
+  background-color: $gs-beach;
+  background-image: url(../img/countourlines-pattern.png);
 }
 
 h1 {
-	margin-top: 70px;
-	color: $gs-blue;
-	font-size: 6vw;
-	text-align: center;
-	font-family: $gs-header;
-	@media screen and (min-width: 927px){
-		font-size: 3vw;
-		margin-top: 20px;
-	}
+  margin-top: 70px;
+  color: $gs-blue;
+  font-size: 6vw;
+  text-align: center;
+  font-family: $gs-header;
+  @media screen and (min-width: 927px){
+    font-size: 3vw;
+    margin-top: 20px;
+  }
 }
 
 h2 {
-	color: $gs-blue;
-	margin-top: 0;
-	text-align: center;
-	font-family: $gs-header;
+  color: $gs-blue;
+  margin-top: 0;
+  text-align: center;
+  font-family: $gs-header;
 }
 
 h3 {
-	color: $gs-blue;
-	text-align: center;
-	font-family: $gs-header;
+  color: $gs-blue;
+  text-align: center;
+  font-family: $gs-header;
 }
 
 .center {
-	display: block;
-	margin: auto;
-	text-align: center;
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 
 //============================================
@@ -68,342 +68,350 @@ h3 {
 //============================================
 
 header {
-	height: 100%;
-	display: block;
+  height: 100%;
+  display: block;
 }
 
 .header-background {
-	width: 100%;
-	z-index: 1;
-	top: 0;
-	position: relative;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  position: relative;
 }
 
 .navbar {
-	width: 100%;
-	height: 50px;
-	z-index: 5;
-	position: fixed;
-	border-radius: 0;
-	transition: ease all .3s;
-	background-color: $gs-beach;
-	img {
-		z-index: 2;
-		display: block;
-		margin: auto;
-		position: relative;
-		margin-top: 10px;
-	}
-	.triangle {
-		width: 0;
-		height: 0;
-		top: 49px;
-		margin-right: -30px;
-		right: 50%;
-		z-index: 1;
-		display: block;
-		position: absolute;
-		border-style: solid;
-		transition: ease all .3s;
-		border-width: 20px 30px 0 30px;
-		border-color: $gs-beach transparent transparent transparent;
-	}
+  width: 100%;
+  height: 50px;
+  z-index: 5;
+  position: fixed;
+  border-radius: 0;
+  transition: ease all .3s;
+  background-color: $gs-beach;
+  img {
+    z-index: 2;
+    display: block;
+    margin: auto;
+    position: relative;
+    margin-top: 10px;
+  }
+  .triangle {
+    width: 0;
+    height: 0;
+    top: 49px;
+    margin-right: -30px;
+    right: 50%;
+    z-index: 1;
+    display: block;
+    position: absolute;
+    border-style: solid;
+    transition: ease all .3s;
+    border-width: 20px 30px 0 30px;
+    border-color: $gs-beach transparent transparent transparent;
+  }
 }
 
 .nav-links {
-	top: 60px;
-	padding: 0;
-	width: 100%;
-	margin: auto;
-	z-index: 6;
-	text-align: center;
-	list-style: none;
-	display: none;
-	position: fixed;
-	transition: ease all .3s;
-	li {
-		margin: 0px;
-		display: inline-block;
-		@media screen and (min-width: 927px){
-			margin: 10px;
-		}
-		a {
-			color: $gs-beach;
-			margin: 0px;
-			width: 130px;
-			padding: 0px 14px;
-			display: block;
-			font-size: 2em;
-			font-family: $gs-header;
-			text-decoration: none;
-			transition: ease all .3s;
-			&:hover {
-				border-bottom: 3px solid $gs-green;
-			}
-			@media screen and (min-width: 769px){
-				margin: 0 30px;
-				padding: 0 4px;
-			}
-			@media screen and (min-width: 927px){
-				margin: 0 30px;
-			}
-		}
-	}
-	@media screen and (min-width: 646px){
-		display: block;
-	}
+  top: 60px;
+  padding: 0;
+  width: 100%;
+  margin: auto;
+  z-index: 6;
+  text-align: center;
+  list-style: none;
+  display: none;
+  position: fixed;
+  transition: ease all .3s;
+  li {
+    margin: 0px;
+    display: inline-block;
+    @media screen and (min-width: 927px){
+      margin: 10px;
+    }
+    a {
+      color: $gs-beach;
+      margin: 0px;
+      width: 130px;
+      padding: 0px 14px;
+      display: block;
+      font-size: 2em;
+      font-family: $gs-header;
+      text-decoration: none;
+      transition: ease all .3s;
+      &:hover {
+        border-bottom: 3px solid $gs-green;
+      }
+      @media screen and (min-width: 769px){
+        margin: 0 30px;
+        padding: 0 4px;
+      }
+      @media screen and (min-width: 927px){
+        margin: 0 30px;
+      }
+    }
+  }
+  @media screen and (min-width: 646px){
+    display: block;
+  }
 }
 
 .invert {
-	.navbar {
-		background-color: $gs-blue;
-	}
-	.triangle {
-		border-color: $gs-blue transparent transparent transparent;
-	}
-	.nav-links {
-		top: 0px;
-	}
+  .navbar {
+    background-color: $gs-blue;
+  }
+  .triangle {
+    border-color: $gs-blue transparent transparent transparent;
+  }
+  .nav-links {
+    top: 0px;
+  }
 }
 
 .navbar-toggle {
-	float: none;
-	margin: 0 auto;
-	padding: 0;
+  float: none;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .collapse.in {
-	z-index: 3;
-	width: 100%;
-	display: block;
-	transition: ease all .3s;
-	padding-top: 50px;
-	position: fixed;
-	background-color: $gs-blue;
+  z-index: 3;
+  width: 100%;
+  display: block;
+  transition: ease all .3s;
+  padding-top: 50px;
+  position: fixed;
+  background-color: $gs-blue;
 }
 
 .nav>li>a {
-	color: $gs-beach;
-	&:hover {
-		color: $gs-blue;
-		background-color: $gs-beach;
-	}
+  color: $gs-beach;
+  &:hover {
+    color: $gs-blue;
+    background-color: $gs-beach;
+  }
 }
 
 //--- HOME HEADER SVG
 #GS_Medal {
-	width: 195%;
-	top: 25vw;
-	z-index: 2;
-	position: absolute;
-	display: block;
-	margin: 0 auto;
-	right: -49%;
-	@media screen and (min-width: 478px){
-		top: 15vw;
-		width: 145%;
-		right: -23%;
-	}
-	@media screen and (min-width: 646px){
-		width: 100%;
-		right: 0;
-	}
+  width: 195%;
+  top: 25vw;
+  z-index: 2;
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  right: -49%;
+  @media screen and (min-width: 478px){
+    top: 15vw;
+    width: 145%;
+    right: -23%;
+  }
+  @media screen and (min-width: 646px){
+    width: 100%;
+    right: 0;
+  }
 }
 
 #GSM-Border,
 #Circles,
 #GraphicShark-Text{
-	opacity: 0;
-	animation: reveal .9s linear forwards;
+  opacity: 0;
+  animation: reveal .9s linear forwards;
 }
 
 #GSM-Background {
-	opacity: 0;
-	animation: reveal2 .9s linear forwards;
+  opacity: 0;
+  animation: reveal2 .9s linear forwards;
 }
 
 #Left_Line,
 #RightLine {
-	display: none;
-	#TopBar,
-	#TopBar_1_{
-		stroke-dasharray: 500;
-		stroke-dashoffset: 500;
-		animation: offset .9s ease-in forwards;
-		animation-delay: 1s;
-	}
-	#ShortBar,
-	#ShortBar_1_{
-		stroke-dasharray: 150;
-		stroke-dashoffset: 150;
-		animation: offset .7s ease-in forwards;
-		animation-delay: 1s;
-	}
-	#Dash,
-	#Dash_1_ {
-		stroke-dasharray: 10;
-		stroke-dashoffset: 10;
-		animation: offset .2s ease-in forwards;
-		animation-delay: 1.7s;
-	}
-	@media screen and (min-width: 646px){
-		display: block;
-	}
+  display: none;
+  #TopBar,
+  #TopBar_1_{
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: offset .9s ease-in forwards;
+    animation-delay: 1s;
+  }
+  #ShortBar,
+  #ShortBar_1_{
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+    animation: offset .7s ease-in forwards;
+    animation-delay: 1s;
+  }
+  #Dash,
+  #Dash_1_ {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: offset .2s ease-in forwards;
+    animation-delay: 1.7s;
+  }
+  @media screen and (min-width: 646px){
+    display: block;
+  }
 
 }
 
 #Border {
-	#BottomLine,
-	#TopLine {
-		stroke-dasharray: 270;
-		stroke-dashoffset: 270;
-		animation: offset .9s ease-in forwards;
-		animation-delay: 1s;
-	}
-	#Dashed,
-	#Dashed_1_{
-		stroke-dasharray: 95;
-		stroke-dashoffset: 95;
-		animation: offset .9s ease-in reverse;
-		animation-delay: 1s;
-	}
+  #BottomLine,
+  #TopLine {
+    stroke-dasharray: 270;
+    stroke-dashoffset: 270;
+    animation: offset .9s ease-in forwards;
+    animation-delay: 1s;
+  }
+  #Dashed,
+  #Dashed_1_{
+    stroke-dasharray: 95;
+    stroke-dashoffset: 95;
+    animation: offset .9s ease-in reverse;
+    animation-delay: 1s;
+  }
 }
 
 @keyframes reveal {
-	to {
-		opacity: 1;
-	}
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes reveal2 {
-	to {
-		opacity: 0.5;
-	}
+  to {
+    opacity: 0.5;
+  }
 }
 
 @keyframes offset {
-	to {
-		stroke-dashoffset: 0;
-	}
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 //============================================
 //								MAIN BODY
 //============================================
 
 .content {
-	color: $gs-blue;
-	display: block;
-	margin: 10px 0;
-	padding: 15px;
-	height: 100%;
-	overflow: hidden;
-	cursor: pointer;
-	box-sizing: border-box;
-	border: 3px solid $gs-green;
-	background: $gs-green-o;
+  color: $gs-blue;
+  display: block;
+  margin: 10px 0;
+  padding: 15px;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 3px solid $gs-green;
+  background: $gs-green-o;
 }
 
 .work-item {
-	color: $gs-blue;
-	display: block;
-	margin: 10px 0;
-	padding: 15px;
-	height: 100%;
-	max-height: 360px;
-	overflow: hidden;
-	cursor: pointer;
-	box-sizing: border-box;
-	border: 3px solid $gs-green;
-	background: $gs-green-o;
-	transition: ease all .3s;
-	.frame {
-		display: block;
-		overflow: hidden;
-		border-radius: 50%;
-		border: 3px solid $gs-green;
-		img {
-			display: block;
-			width: 100%;
-			height: 100%;
-			max-height: 150px;
-		}
-	}
-	&:hover {
-		color: $gs-green;
-		text-decoration: none;
-		background-color: $gs-blue;
-		h3 {
-			color: $gs-green;
-		}
-	}
+  color: $gs-blue;
+  display: block;
+  margin: 10px 0;
+  padding: 15px;
+  height: 100%;
+  max-height: 360px;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 3px solid $gs-green;
+  background: $gs-green-o;
+  transition: ease all .3s;
+  .frame {
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid $gs-green;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-height: 150px;
+    }
+  }
+  &:hover {
+    color: $gs-green;
+    text-decoration: none;
+    background-color: $gs-blue;
+    h3 {
+      color: $gs-green;
+    }
+  }
 }
 
 .xp {
-	padding: 0;
-	list-style: none;
-	li {
-		padding: 5px 0;
-		margin-top: 15px;
-		display: block;
-		border-bottom: 3px solid $gs-beach;
-	}
-	img {
-		display: block;
-	}
-	h3 {
-		margin-right: 10px;
-		font-family: $gs-body;
-		display: inline;
-	}
-	p {
-		width: 100%;
-	}
-	hr {
-		margin-top: 5px;
-		border-color: $gs-beach;
-	}
+  padding: 0;
+  list-style: none;
+  li {
+    padding: 5px 0;
+    margin-top: 15px;
+    display: block;
+    border-bottom: 3px solid $gs-beach;
+  }
+  img {
+    display: block;
+  }
+  h3 {
+    margin-right: 10px;
+    font-family: $gs-body;
+    display: inline;
+  }
+  p {
+    width: 100%;
+  }
+  hr {
+    margin-top: 5px;
+    border-color: $gs-beach;
+  }
 }
 
 .skills {
-	tr td p {
-		text-align: center;
-		padding: 5px;
-		border: 3px solid $gs-green;
-		background-color: $gs-beach;
-	}
-	tr:nth-of-type(1) td{
-		border: 0;
-	}
+  tr td p {
+    text-align: center;
+    padding: 5px;
+    border: 3px solid $gs-green;
+    background-color: $gs-beach;
+  }
+  tr:nth-of-type(1) td{
+    border: 0;
+  }
 }
 
 .social {
-	padding: 0;
-	text-align: center;
-	list-style: none;
-	li {
-		display: inline-block;
-		a {
-			color: $gs-beach;
-			display: block;
-			margin: 15px;
-			padding: 5px 10px;
-			cursor: pointer;
-			border: 3px solid $gs-green;
-			background: $gs-blue;
-			transition: ease all .3s;
-			&:hover {
-				text-decoration: none;
-				color: $gs-blue;
-				background: $gs-beach;
-			}
-		}
-	}
+  padding: 0;
+  text-align: center;
+  list-style: none;
+  li {
+    display: inline-block;
+    a {
+      color: $gs-beach;
+      display: block;
+      margin: 15px;
+      padding: 5px 10px;
+      cursor: pointer;
+      border: 3px solid $gs-green;
+      background: $gs-blue;
+      transition: ease all .3s;
+      &:hover {
+        text-decoration: none;
+        color: $gs-blue;
+        background: $gs-beach;
+      }
+    }
+  }
 }
 
 .modal-body,
 .modal-header,
 .modal-footer{
-	background-color: $gs-beach;
+  background-color: $gs-beach;
+}
+
+//============================================
+//						PORTFOLIO STYLING
+//============================================
+
+.m-body {
+  background-color: $gs-beach;
 }
 
 //============================================
@@ -411,23 +419,23 @@ header {
 //============================================
 
 footer {
-	bottom: 0;
-	display: block;
-	width: 100%;
-	color: $gs-green;
-	margin-top: 30px;
-	padding: 15px;
-	text-align: center;
-	position: relative;
-	background-color: $gs-blue;
-	border-top: 3px solid $gs-green;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  color: $gs-green;
+  margin-top: 30px;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  background-color: $gs-blue;
+  border-top: 3px solid $gs-green;
 }
 
 .absolute footer{
-	width: 100%;
-	position: absolute;
-	@media screen and (max-width: 768px){
-		position: relative;
-	}
+  width: 100%;
+  position: absolute;
+  @media screen and (max-width: 768px){
+    position: relative;
+  }
 }
 
