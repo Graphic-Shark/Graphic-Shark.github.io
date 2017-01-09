@@ -364,7 +364,12 @@ header {
   .m-main .m-photo {
     margin: auto;
     width: 100%;
-    max-width: 750px; }
+    max-width: 750px;
+    margin-bottom: 15px; }
+  .m-main .view-site {
+    text-align: center;
+    padding: 5px 10px;
+    border: 5px solid #91A99C; }
 
 footer {
   bottom: 0;

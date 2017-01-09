@@ -459,6 +459,12 @@ header {
 		margin: auto;
 		width: 100%;
 		max-width: 750px;
+		margin-bottom: 15px;
+	}
+	.view-site {
+		text-align: center;
+		padding: 5px 10px;
+		border: 5px solid $gs-green;
 	}
 }
 
