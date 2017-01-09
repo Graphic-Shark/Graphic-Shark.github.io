@@ -135,23 +135,23 @@
 
             <script type="text/ng-template" id="myModalContent.html">
               <div class="modal-header">
-                  <h3 class="modal-title" id="modal-title">Headline 01</h3>
-                  <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+                <h3 class="modal-title" id="modal-title">Headline 01</h3>
+                <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
               </div>
               <div class="modal-body" id="modal-body">
                 <img src="img/work/ranlife/ranlifeThumbnail.jpg">
               </div>
               <div class="modal-footer">
               </div>
-          </script>
+            </script>
 
             <div  ng-controller="ModalDemoCtrl as $ctrl" ng-cloak>
-              <div class="col-xs-12 || col-sm-4 || col-md-3" ng-repeat="work in $ctrl.works">
-                <a href="" class="work-item" ng-click="$ctrl.open('lg', work)">
+              <div class="col-xs-12 || col-sm-4 || col-md-3" ng-repeat="work in $ctrl.works track by work.id">
+                <a href="" class="work-item" ng-click="$ctrl.open('lg', work.link)">
                   <div class="frame">
-                    <img class="img-responsive" src="{{work.img}}" alt="">
+                    <img class="img-responsive" ng-src="{{::work.img}}" alt="">
                   </div>
-                  <h3>{{work.header}}</h3>
+                  <h3 ng-bind="work.header"></h3>
                   <p>{{work.body}}</p>
                 </a>
               </div>
