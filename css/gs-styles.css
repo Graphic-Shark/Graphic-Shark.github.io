@@ -244,8 +244,7 @@ header {
   display: block;
   margin: 10px 0;
   padding: 15px;
-  height: 100%;
-  max-height: 360px;
+  height: 260px;
   overflow: hidden;
   cursor: pointer;
   box-sizing: border-box;
@@ -367,9 +366,10 @@ header {
     max-width: 750px;
     margin-bottom: 15px; }
   .m-main .view-site {
+    color: #D2DBBD;
     text-align: center;
     padding: 5px 10px;
-    border: 5px solid #91A99C; }
+    background-color: #91A99C; }
 
 footer {
   bottom: 0;
