@@ -25,7 +25,7 @@ angular.module('gShark')
 				link: 'work/ran-filetransfer.html',
 				img: 'img/work/ranFileTransfer/fileTransfer-Thumbnail.jpg',
 				header: 'RANLife File Transfer',
-				body: 'Redesign of Beacon Homes builder main website. built in Angular JS functinality and established new branding colors.'
+				body: 'Redesign of companies file transfer. This included the client side and company side functionality.'
 			},{
 				id: 004,
 				link: 'work/ran-solar.html',
@@ -34,14 +34,14 @@ angular.module('gShark')
 				body: 'Complete branding and design for this new branch of the company. They wanted something bright and with a focus on earth and saving money.'
 			},{
 				id: 005,
-				link: '*',
+				link: 'work/ran-shortsale.html',
 				img: 'img/work/utahShortSales/ShortSales-Thumbnail.jpg',
 				header: 'Utah Short Sales',
 				body: 'Redesign of Beacon Homes builder main website. built in Angular JS functinality and established new branding colors.'
 			},{
 				id: 006,
-				link: '*',
-				img: 'img/work/Logos/Logo-Thumbnail.jpg',
+				link: 'work/logos-collection.html',
+				img: 'img/work/logos/Logo-Thumbnail.jpg',
 				header: 'Logo Collection',
 				body: "A series of logos that I've designed. Some of them have gone on to good companies, others have been just for fun."
 			}
@@ -106,7 +106,7 @@ angular.module('gShark').controller('ModalDemoCtrl', function ($uibModal, $log, 
 			ariaLabelledBy: 'modal-title-bottom',
 			ariaDescribedBy: 'modal-body-bottom',
 			templateUrl: 'stackedModal.html',
-			size: 'sm',
+			size: 'lg',
 			controller: function($scope) {
 				$scope.name = 'bottom';
 			}
@@ -117,7 +117,7 @@ angular.module('gShark').controller('ModalDemoCtrl', function ($uibModal, $log, 
 			ariaLabelledBy: 'modal-title-top',
 			ariaDescribedBy: 'modal-body-top',
 			templateUrl: 'stackedModal.html',
-			size: 'sm',
+			size: 'lg',
 			controller: function($scope) {
 				$scope.name = 'top';
 			}

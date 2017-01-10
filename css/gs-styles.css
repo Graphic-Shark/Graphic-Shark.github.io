@@ -243,19 +243,19 @@ header {
   color: #0F4556;
   display: block;
   margin: 10px 0;
-  padding: 15px;
-  height: 260px;
+  height: 235px;
   overflow: hidden;
   cursor: pointer;
   box-sizing: border-box;
-  border: 3px solid #91A99C;
-  background: rgba(145, 169, 156, 0.5);
-  transition: ease all .3s; }
+  background: #91A99C;
+  transition: ease all .3s;
+  -moz-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.43);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.22); }
   .work-item .frame {
+    width: 100%;
     display: block;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 3px solid #91A99C; }
+    overflow: hidden; }
     .work-item .frame img {
       display: block;
       width: 100%;

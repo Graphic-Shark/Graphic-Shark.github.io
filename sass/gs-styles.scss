@@ -307,19 +307,19 @@ header {
 	color: $gs-blue;
 	display: block;
 	margin: 10px 0;
-	padding: 15px;
-	height: 260px;
+	height: 235px;
 	overflow: hidden;
 	cursor: pointer;
 	box-sizing: border-box;
-	border: 3px solid $gs-green;
-	background: $gs-green-o;
+	background: $gs-green;
 	transition: ease all .3s;
+	-moz-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.43);
+	-webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.43);
+	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.22);
 	.frame {
+		width: 100%;
 		display: block;
 		overflow: hidden;
-		border-radius: 50%;
-		border: 3px solid $gs-green;
 		img {
 			display: block;
 			width: 100%;
