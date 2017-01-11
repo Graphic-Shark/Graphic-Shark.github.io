@@ -259,8 +259,9 @@ header {
     .work-item .frame img {
       display: block;
       width: 100%;
-      background-color: #fff;
-      max-height: 150px; }
+      min-height: 150px;
+      max-height: 150px;
+      background-color: #fff; }
   .work-item:hover {
     color: #91A99C;
     text-decoration: none;
