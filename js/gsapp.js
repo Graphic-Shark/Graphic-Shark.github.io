@@ -12,36 +12,42 @@ angular.module('gShark')
 				id: 001,
 				link: 'work/ranlife-main.html',
 				img: 'img/work/ranlife/ranlifeThumbnail.jpg',
+				alt: 'RANLife Website Thumbnail',
 				header: 'RANLife Redesign',
 				body: 'Complete redesign of the main RANLife website. This inculded creating new brand colors and udated visuals.'
 			},{
 				id: 002,
 				link: 'work/BeaconHomes.html',
 				img: 'img/work/beaconHomes/BH-HomeThumbnail.jpg',
+				alt: 'Beacon Homes Thumbnail',
 				header: 'Beacon Homes Redesign',
 				body: 'Redesign of Beacon Homes builder main website. built in Angular JS functinality and established new branding colors.'
 			},{
 				id: 003,
 				link: 'work/ran-filetransfer.html',
 				img: 'img/work/ranFileTransfer/fileTransfer-Thumbnail.jpg',
+				alt: 'File Transfer Thumbnail',
 				header: 'RANLife File Transfer',
 				body: 'Redesign of companies file transfer. This included the client side and company side functionality.'
 			},{
 				id: 004,
 				link: 'work/ran-solar.html',
 				img: 'img/work/ranSolar/RLS-Thumbnail.jpg',
+				alt: 'RANLife Solar Thumbnail',
 				header: 'RANLife Solar',
 				body: 'Complete branding and design for this new branch of the company. They wanted something bright and with a focus on earth and saving money.'
 			},{
 				id: 005,
 				link: 'work/ran-shortsale.html',
 				img: 'img/work/utahShortSales/ShortSales-Thumbnail.jpg',
+				alt: 'Short Sales Thumbnail',
 				header: 'Utah Short Sales',
 				body: 'Redesign of Beacon Homes builder main website. built in Angular JS functinality and established new branding colors.'
 			},{
 				id: 006,
 				link: 'work/logos-collection.html',
 				img: 'img/work/logos/Logo-Thumbnail.jpg',
+				alt: 'Logo Thumbnail',
 				header: 'Logo Collection',
 				body: "A series of logos that I've designed. Some of them have gone on to good companies, others have been just for fun."
 			}

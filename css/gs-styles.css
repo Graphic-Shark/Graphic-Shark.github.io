@@ -259,7 +259,7 @@ header {
     .work-item .frame img {
       display: block;
       width: 100%;
-      height: 100%;
+      background-color: #fff;
       max-height: 150px; }
   .work-item:hover {
     color: #91A99C;

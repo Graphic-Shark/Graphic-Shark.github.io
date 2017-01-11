@@ -137,9 +137,9 @@
 							<div class="col-xs-12 || col-sm-4 || col-md-3" ng-repeat="work in $ctrl.works track by work.id">
 								<a href="" class="work-item" ng-click="$ctrl.open('lg', work.link)">
 									<div class="frame">
-										<img class="img-responsive" ng-src="{{::work.img}}" alt="">
+										<img class="img-responsive" ng-src="{{::work.img}}" alt="{{::work.alt}}">
 									</div>
-									<h3 ng-bind="work.header"></h3>
+									<h3 ng-bind="::work.header"></h3>
 								</a>
 							</div>
 						</div>
