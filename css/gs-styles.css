@@ -16,12 +16,12 @@ body {
 h1 {
   margin-top: 70px;
   color: #0F4556;
-  font-size: 6vw;
+  font-size: 8vw;
   text-align: center;
   font-family: "Ailerons", sans-serif; }
   @media screen and (min-width: 927px) {
     h1 {
-      font-size: 3vw;
+      font-size: 5vw;
       margin-top: 20px; } }
 
 h2 {
@@ -252,7 +252,7 @@ header {
   color: #0F4556;
   display: block;
   margin: 10px 0;
-  height: 235px;
+  height: 195px;
   overflow: hidden;
   cursor: pointer;
   box-sizing: border-box;
@@ -261,6 +261,9 @@ header {
   -moz-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.43);
   -webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.43);
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.22); }
+  @media screen and (min-width: 450px) {
+    .work-item {
+      height: 235px; } }
   .work-item .frame {
     width: 100%;
     display: block;
@@ -268,15 +271,28 @@ header {
     .work-item .frame img {
       display: block;
       width: 100%;
-      min-height: 150px;
-      max-height: 150px;
+      min-height: 95px;
+      max-height: 95px;
       background-color: #fff; }
+      @media screen and (min-width: 450px) {
+        .work-item .frame img {
+          min-height: 150px;
+          max-height: 150px; } }
+  .work-item h3 {
+    margin-top: 5px; }
+    @media screen and (min-width: 450px) {
+      .work-item h3 {
+        margin-top: 20px; } }
   .work-item:hover {
     color: #91A99C;
     text-decoration: none;
     background-color: #0F4556; }
     .work-item:hover h3 {
+      margin-top: 5px;
       color: #91A99C; }
+      @media screen and (min-width: 450px) {
+        .work-item:hover h3 {
+          margin-top: 20px; } }
   .work-item:active, .work-item:focus {
     text-decoration: none; }
 
