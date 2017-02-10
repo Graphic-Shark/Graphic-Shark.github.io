@@ -4,8 +4,18 @@
 //							DOCUMENT FONTS
 //============================================
 
-@import url(../fonts/Ailerons-Typeface.otf);
+//@import url(../fonts/Ailerons-Typeface.otf);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600,800);
+@font-face {
+	font-family: 'Ailerons';
+	src: url('../fonts/Ailerons-Typeface.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/Ailerons-Typeface.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			 url('../fonts/Ailerons-Typeface.woff2') format('woff2'), /* Super Modern Browsers */
+			 url('../fonts/Ailerons-Typeface.woff') format('woff'), /* Pretty Modern Browsers */
+			 url('../fonts/Ailerons-Typeface.ttf')  format('truetype'), /* Safari, Android, iOS */
+			 url('../fonts/Ailerons-Typeface.0tf')  format('OpenTypeFormat'),
+			 url('../fonts/Ailerons-Typeface.svg#Ailerons') format('svg'); /* Legacy iOS */
+}
 
 //============================================
 //								VARIABLES
@@ -75,8 +85,11 @@ header {
 .header-background {
 	width: 100%;
 	z-index: 1;
-	top: 0;
+	top: 49px;
 	position: relative;
+	@media screen and (min-width: 927px){
+			top: 0;
+		}
 }
 
 .navbar {
@@ -190,19 +203,19 @@ header {
 	}
 }
 
-//--- HOME HEADER SVG
+//-------------------------- HOME HEADER SVG
 #GS_Medal {
-	width: 195%;
-	top: 25vw;
+	width: 80%;
+	top: 7vw;
 	z-index: 2;
 	position: absolute;
 	display: block;
 	margin: 0 auto;
-	right: -49%;
+	left: 10%;
 	@media screen and (min-width: 478px){
 		top: 15vw;
-		width: 145%;
-		right: -23%;
+		width: 100%;
+		left: 0%;
 	}
 	@media screen and (min-width: 646px){
 		width: 100%;
