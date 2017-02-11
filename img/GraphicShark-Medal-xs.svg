@@ -48,18 +48,18 @@
 	<circle fill="none" stroke="#D0DABC" stroke-miterlimit="10" cx="527.791" cy="151.678" r="3.646"/>
 	<circle fill="none" stroke="#D0DABC" stroke-miterlimit="10" cx="38.183" cy="151.678" r="3.646"/>
 </g>
-<g id="Border">
-	<g id="Right_Border">
-		<polyline id="BottomLine" fill="none" stroke="#D0DABC" stroke-width="2" stroke-miterlimit="10" points="521.53,109.699
-			563.509,151.678 414.964,300.223 		"/>
+	<g id="Border">
+		<g id="Right_Border">
+			<polyline id="BottomLine" fill="none" stroke="#D0DABC" stroke-width="2" stroke-miterlimit="10" points="521.53,109.699
+				563.509,151.678 414.964,300.223 		"/>
 
-			<line id="Dashed_1_" fill="none" stroke="#D0DABC" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="7.918,7.918" x1="513.105" y1="101.269" x2="459.93" y2="48.061"/>
-	</g>
-	<g id="LeftBorder">
-		<polyline id="TopLine" fill="none" stroke="#D0DABC" stroke-width="2" stroke-miterlimit="10" points="50.009,193.503
-			8.03,151.524 156.575,2.979 		"/>
+				<line id="Dashed_1_" fill="none" stroke="#D0DABC" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="7.918,7.918" x1="513.105" y1="101.269" x2="459.93" y2="48.061"/>
+		</g>
+		<g id="LeftBorder">
+			<polyline id="TopLine" fill="none" stroke="#D0DABC" stroke-width="2" stroke-miterlimit="10" points="50.009,193.503
+				8.03,151.524 156.575,2.979 		"/>
 
-			<line id="Dashed" fill="none" stroke="#D0DABC" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="7.918,7.918" x1="58.435" y1="201.933" x2="111.609" y2="255.141"/>
+				<line id="Dashed" fill="none" stroke="#D0DABC" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="7.918,7.918" x1="58.435" y1="201.933" x2="111.609" y2="255.141"/>
+		</g>
 	</g>
-</g>
 </svg>

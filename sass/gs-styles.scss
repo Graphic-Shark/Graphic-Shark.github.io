@@ -67,6 +67,27 @@ h3 {
 	font-family: $gs-header;
 }
 
+.btn-close {
+	color: $gs-beach;
+	width: 50px;
+	height: 50px;
+	top: 10px;
+	right: 10px;
+	font-size: 2em;
+	position: absolute;
+	border: 0;
+	border-radius: 50%;
+	transition: ease all .3s;
+	background-color: $gs-blue;
+	&:hover {
+		color: $gs-blue;
+		background-color: $gs-beach;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
 .center {
 	display: block;
 	margin: auto;
@@ -454,6 +475,7 @@ header {
 .m-body {
 	margin: 0;
 	display: block;
+	position: relative;
 	box-sizing: border-box;
 	background-color: $gs-beach;
 }
