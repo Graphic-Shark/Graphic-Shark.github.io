@@ -14,25 +14,25 @@ $(function() {
 	});
 });
 
-var y = $(this).scrollTop();
-var blue = '#0F4556';
-var blueTri = '#0F4556 transparent transparent transparent';
-var green = '#D2DBBD';
-var greenTri = '#D2DBBD transparent transparent transparent';
-
-switch $( document ).width() {
-	case (y > 768):
-		$('.navbar').css({ 'background-color': blue })
-		$('.triangle').css({ 'border-color': blueTri })
-		$('.nav-links').css({ 'top': '-5px' })
-		$('.logo').attr( 'src', 'img/navbar-Logo-I.svg' )
-	case (docWidth < 1280):
-	default:
-		$('.logo').attr( 'src', 'img/navbar-Logo.svg' )
-		$('.navbar').css({ 'background-color': green })
-		$('.triangle').css({ 'border-color': greenTri })
-		$('.nav-links').css({ 'top': '60px' })
-}
+//var y = $(this).scrollTop();
+//var blue = '#0F4556';
+//var blueTri = '#0F4556 transparent transparent transparent';
+//var green = '#D2DBBD';
+//var greenTri = '#D2DBBD transparent transparent transparent';
+//
+//switch $( document ).width() {
+//	case (y > 768):
+//		$('.navbar').css({ 'background-color': blue })
+//		$('.triangle').css({ 'border-color': blueTri })
+//		$('.nav-links').css({ 'top': '-5px' })
+//		$('.logo').attr( 'src', 'img/navbar-Logo-I.svg' )
+//	case (docWidth < 1280):
+//	default:
+//		$('.logo').attr( 'src', 'img/navbar-Logo.svg' )
+//		$('.navbar').css({ 'background-color': green })
+//		$('.triangle').css({ 'border-color': greenTri })
+//		$('.nav-links').css({ 'top': '60px' })
+//}
 
 
 // Color change with page scroll
