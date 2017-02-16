@@ -67,7 +67,7 @@ header {
   z-index: 1;
   top: 49px;
   position: relative; }
-  @media screen and (min-width: 927px) {
+  @media screen and (min-width: 768px) {
     .header-background {
       top: 0; } }
 
