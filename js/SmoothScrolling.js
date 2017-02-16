@@ -14,55 +14,72 @@ $(function() {
 	});
 });
 
-//var y = $(this).scrollTop();
-//var blue = '#0F4556';
-//var blueTri = '#0F4556 transparent transparent transparent';
-//var green = '#D2DBBD';
-//var greenTri = '#D2DBBD transparent transparent transparent';
-//
-//switch $( document ).width() {
-//	case (y > 768):
-//		$('.navbar').css({ 'background-color': blue })
-//		$('.triangle').css({ 'border-color': blueTri })
-//		$('.nav-links').css({ 'top': '-5px' })
-//		$('.logo').attr( 'src', 'img/navbar-Logo-I.svg' )
-//	case (docWidth < 1280):
-//	default:
-//		$('.logo').attr( 'src', 'img/navbar-Logo.svg' )
-//		$('.navbar').css({ 'background-color': green })
-//		$('.triangle').css({ 'border-color': greenTri })
-//		$('.nav-links').css({ 'top': '60px' })
-//}
-
-
-// Color change with page scroll
+var y = $(this).scrollTop();
+var docWidth = $( document ).width();
+var blue = '#0F4556';
+var green = '#D2DBBD';
+var blueLogo = 'img/navbar-Logo.svg';
+var greenLogo =  'img/navbar-Logo-I.svg';
+var navColor = green;
+var navImage = greenLogo;
+var borderColor = green + 'transparent transparent transparent';
+var linkTop = '60px';
+var oldColor = navColor;
 $(document).scroll(function () {
-	var y = $(this).scrollTop();
-	var docWidth = $( document ).width();
-	var blue = '#0F4556';
-	var blueTri = '#0F4556 transparent transparent transparent';
-	var green = '#D2DBBD';
-	var greenTri = '#D2DBBD transparent transparent transparent';
-
-	if (y > 150) {
-		$('.navbar').css({ 'background-color': blue })
-		$('.triangle').css({ 'border-color': blueTri })
-		$('.nav-links').css({ 'top': '-5px' })
-		$('.logo').attr( 'src', 'img/navbar-Logo-I.svg' )
-	} else {
-		$('.logo').attr( 'src', 'img/navbar-Logo.svg' )
-		$('.navbar').css({ 'background-color': green })
-		$('.triangle').css({ 'border-color': greenTri })
-		$('.nav-links').css({ 'top': '60px' })
+	switch (docWidth && y) {
+		case (docWidth < 768 && y > 10):
+			navColor = blue;
+			navImage = blueLogo;
+			borderColor = blue + 'transparent transparent transparent';
+			linkTop = '-5px';
+			break;
+		default:
+			navColor = green;
+			navImage = greenLogo;
+			borderColor = green + 'transparent transparent transparent';
+			linkTop = '60px';
+			break;
 	}
-
-	if(docWidth < 1280){
-		if (y > 625) {
-		$('.navbar').css({ 'background-color': blue })
-		$('.triangle').css({ 'border-color': blueTri })
-	} else {
-		$('.navbar').css({ 'background-color': green })
-		$('.triangle').css({ 'border-color': greenTri })
-	}
-}
+	 if(navColor !== oldColor){
+		 $('.navbar').css({'background-color': navColor});
+		 $('.triangle').css({'border-color': borderColor});
+		 $('.logo').attr({'src': blueLogo});
+		 $('.nav-links').css({'top':  linkTop});
+		 oldColor = navColor;
+	 }
 });
+
+ //Color change with page scroll
+//$(document).scroll(function () {
+//	var y = $(this).scrollTop();
+//	var docWidth = $( document ).width();
+//	var blue = {'background-color' : '#0F4556'};
+//	var blueLogo = {src: 'img/navbar-Logo.svg'};
+//	var blueTri = {'border-color': '#0F4556 transparent transparent transparent'};
+//
+//	var green = {'background-color' :'#D2DBBD'};
+//	var greenLogo = {src: 'img/navbar-Logo-I.svg'};
+//	var greenTri = {'border-color': '#D2DBBD transparent transparent transparent'};
+//
+//	if (y > 150) {
+//		$('.navbar').css(blue)
+//		$('.logo').attr( greenLogo )
+//		$('.triangle').css(blueTri)
+//		$('.nav-links').css({ 'top': '-5px' })
+//	} else {
+//		$('.navbar').css(green)
+//		$('.logo').attr( blueLogo )
+//		$('.triangle').css(greenTri)
+//		$('.nav-links').css({ 'top': '60px' })
+//	}
+//
+//	if(docWidth < 1280){
+//		if (y > 625) {
+//		$('.navbar').css(blue)
+//		$('.triangle').css(blueTri)
+//	} else {
+//		$('.navbar').css(green)
+//		$('.triangle').css(greenTri)
+//	}
+//}
+//});
