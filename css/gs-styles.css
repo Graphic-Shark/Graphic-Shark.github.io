@@ -157,7 +157,6 @@ header {
   z-index: 3;
   width: 100%;
   display: block;
-  transition: ease all .3s;
   padding-top: 50px;
   position: fixed;
   background-color: #0F4556; }
