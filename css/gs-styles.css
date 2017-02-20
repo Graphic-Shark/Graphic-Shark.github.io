@@ -342,6 +342,27 @@ header {
 .skills tr:nth-of-type(1) td {
   border: 0; }
 
+.skills .high:before {
+  content: "H"; }
+
+.skills .medium:before {
+  content: "M"; }
+
+.skills .low:before {
+  content: "L"; }
+
+@media screen and (min-width: 1200px) {
+  .skills .high:before {
+    content: "HIGH"; }
+  .skills .medium:before {
+    content: "MEDIUM"; }
+  .skills .low:before {
+    content: "LOW"; } }
+
+@media screen and (max-width: 767px) {
+  .table-responsive {
+    border: 0; } }
+
 .social {
   padding: 0;
   text-align: center;
