@@ -1,3 +1,13 @@
+//Go to anchor tag
+//$(document).ready(function () {
+//	var lastLocation = window.location.hash;
+//	if (lastLocation) {
+//		$('html, body').animate({
+//			scrollTop: $(lastLocation).offset().top
+//			}, 800);
+//		}
+//});
+
 // Smoothly Scrolls down to desired link
 $(function() {
 	$('a[href*="#"]:not([href="#"])').click(function() {
