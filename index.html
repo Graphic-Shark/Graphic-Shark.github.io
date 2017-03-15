@@ -1,98 +1,103 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="gShark">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="theme-color" content="#0F4556">
-		<title>Graphic Shark | HOME</title>
-		<link rel=”shortcut icon” href=”/favicon.ico” type=”image/x-icon” />
-		<link type="text/css" rel="stylesheet" href="css/normalize.css">
-		<link type="text/css"	rel="stylesheet" href="css/bootstrap.min.css">
-		<link type="text/css" rel="stylesheet" href="css/gs-styles.css">
 
-		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
-		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
-		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
-		<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.3.0.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script type="text/javascript" src="js/gsapp.js"></script>
-		<script type="application/ld+json">
-			{
-				"@content": "http://schema.org",
-				"@type": "Person",
-				"name": "Ethan Evans",
-				"alternateName": "Graphic Shark",
-				"url": "http://www.thegraphicshark.com",
-				"logo": "http://www.thegraphicshark.com/img/GS-txt-LOGO.png",
-				"sameAs": [
-					"https://www.facebook.com/graphicshark",
-					"https://www.linkedin.com/in/graphicshark",
-					"https://www.behance.net/GraphicShark"
-				],
-				"contactPoint": [{
-					"@type": "ContactPoint",
-					"email": "graphicshark@gmail.com",
-					"contactType": "Creative",
-					"areaServed": "US"
-				}]
-			}
-		</script>
-	</head>
-	<body>
-		<header>
-			<nav class="index-nav">
-					<div class="navbar">
-							<a href="index.html" class="hidden-xs"><img class="logo" alt="Graphic Shark Logo" src="img/navbar-Logo.svg"></a>
-							<button type="button" class="navbar-toggle || collapsed || visible-xs" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#0F4556">
+	<title>Graphic Shark | HOME</title>
+	<link rel=”shortcut icon” href=”/favicon.ico” type=”image/x-icon” />
+	<link type="text/css" rel="stylesheet" href="css/normalize.css">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="css/gs-styles.css">
+
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
+	<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.3.0.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/gsapp.js"></script>
+	<script type="application/ld+json">
+		{
+			"@content": "http://schema.org",
+			"@type": "Person",
+			"name": "Ethan Evans",
+			"alternateName": "Graphic Shark",
+			"url": "http://www.thegraphicshark.com",
+			"logo": "http://www.thegraphicshark.com/img/GS-txt-LOGO.png",
+			"sameAs": [
+				"https://www.facebook.com/graphicshark",
+				"https://www.linkedin.com/in/graphicshark",
+				"https://www.behance.net/GraphicShark"
+			],
+			"contactPoint": [{
+				"@type": "ContactPoint",
+				"email": "graphicshark@gmail.com",
+				"contactType": "Creative",
+				"areaServed": "US"
+			}]
+		}
+
+	</script>
+</head>
+
+<body>
+	<header>
+		<nav class="index-nav" ng-controller="navController">
+			<div class="navbar">
+				<a href="index.html" class="hidden-xs"><img class="logo" alt="Graphic Shark Logo" src="img/navbar-Logo.svg"></a>
+				<button type="button" class="navbar-toggle || collapsed || visible-xs" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 								 <img class="logo" alt="Graphic Shark Logo" src="img/navbar-Logo.svg">
 						 </button>
-						<div class="triangle"></div>
-					</div>
-					<div id="navbar" class="navbar-collapse || visible-xs || collapse" aria-expanded="false" style="height: 1px;">
-					 <ul class="nav navbar-nav">
-						 <li><a href="index.html">HOME</a></li>
-						 <li><a ng-href="index.html#portfolio">WORK</a></li>
-						 <li><a href="about.html">ABOUT</a></li>
-						 <li><a href="resume.html">RESUME</a></li>
-					 </ul>
-				 </div>
-					<ul class="nav-links">
-						<li><a href="index.html">HOME</a></li>
-						<li><a ng-href="index.html#portfolio">WORK</a></li>
-						<li><a href="about.html">ABOUT</a></li>
-						<li><a href="resume.html">RESUME</a></li>
+				<div class="triangle"></div>
+			</div>
+			<!--					MOBILE NAV-->
+			<div id="navbar" class="navbar-collapse || visible-xs || collapse" aria-expanded="false" style="height: 1px;">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="#portfolio">WORK</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="resume.html">RESUME</a></li>
 				</ul>
-			</nav>
-			<div class="hidden-xs" ng-include="'img/GraphicShark-Medal-01.svg'"></div>
-			<div class="visible-xs" ng-include="'img/GraphicShark-Medal-xs.svg'"></div>
-			<img class="header-background" src="img/OceanBackground-03.jpeg" alt=" ">
-		</header>
-		<main>
-			<a name="portfolio"></a>
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 || col-sm-12 || col-md-12">
-						<h1>Portfolio Work</h1>
-						<hr>
+			</div>
+			<ul class="nav-links">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="#portfolio">WORK</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="resume.html">RESUME</a></li>
+			</ul>
+		</nav>
+		<div class="hidden-xs" ng-include="'img/GraphicShark-Medal-01.svg'"></div>
+		<div class="visible-xs" ng-include="'img/GraphicShark-Medal-xs.svg'"></div>
+		<img class="header-background" src="img/OceanBackground-03.jpeg" alt=" ">
+	</header>
+	<main>
+		<a name="portfolio" id="portfolio"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 || col-sm-12 || col-md-12">
+					<h1>Portfolio Work</h1>
+					<hr>
 
-						<div  ng-controller="ModalDemoCtrl as $ctrl" ng-cloak>
-							<div class="col-xs-6 || col-sm-4 || col-md-3" ng-repeat="work in $ctrl.works track by work.id">
-								<a href="" class="work-item" ng-click="$ctrl.open('lg', work.link)">
-									<div class="frame">
-										<img class="img-responsive" ng-src="{{::work.img}}" alt="{{::work.alt}}">
-									</div>
-									<h3 ng-bind="::work.header"></h3>
-								</a>
-							</div>
+					<div ng-controller="ModalDemoCtrl as $ctrl" ng-cloak>
+						<div class="col-xs-6 || col-sm-4 || col-md-3" ng-repeat="work in $ctrl.works track by work.id">
+							<a href="" class="work-item" ng-click="$ctrl.open('lg', work.link)">
+								<div class="frame">
+									<img class="img-responsive" ng-src="{{::work.img}}" alt="{{::work.alt}}">
+								</div>
+								<h3 ng-bind="::work.header"></h3>
+							</a>
 						</div>
-
 					</div>
+
 				</div>
 			</div>
-		</main>
-		<footer ng-include="'footer.html'"></footer>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/SmoothScrolling.js"></script>
-	</body>
+		</div>
+	</main>
+	<footer ng-include="'footer.html'"></footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/SmoothScrolling.js"></script>
+</body>
+
 </html>

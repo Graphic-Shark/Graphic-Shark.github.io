@@ -391,14 +391,14 @@ header {
 .modal-content {
   margin: 0;
   padding: 0;
-  background-color: #D2DBBD; }
+  background-color: #fff; }
 
 .m-body {
   margin: 0;
   display: block;
   position: relative;
   box-sizing: border-box;
-  background-color: #D2DBBD; }
+  background-color: #fff; }
 
 .m-header {
   width: 100%; }
@@ -431,7 +431,7 @@ header {
     max-width: 750px;
     margin-bottom: 15px; }
   .m-main .view-site {
-    color: #D2DBBD;
+    color: #fff;
     text-align: center;
     padding: 5px 10px;
     background-color: #91A99C; }

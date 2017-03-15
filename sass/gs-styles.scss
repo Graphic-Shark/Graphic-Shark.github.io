@@ -497,14 +497,14 @@ header {
 .modal-content {
 	margin: 0;
 	padding: 0;
-	background-color: $gs-beach;
+	background-color: #fff;
 }
 .m-body {
 	margin: 0;
 	display: block;
 	position: relative;
 	box-sizing: border-box;
-	background-color: $gs-beach;
+	background-color: #fff;
 }
 
 .m-header {
@@ -543,7 +543,7 @@ header {
 		margin-bottom: 15px;
 	}
 	.view-site {
-		color: $gs-beach;
+		color: #fff;
 		text-align: center;
 		padding: 5px 10px;
 		background-color: $gs-green;
