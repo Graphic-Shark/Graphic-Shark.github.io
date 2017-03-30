@@ -340,13 +340,14 @@ header {
 //-------------------------- PORTFOLIO ITEMS
 .work-item {
 	color: $gs-blue;
-	display: block;
+	display: inline-block;
 	margin: 10px 0;
-	height: 195px;
+	height: 100%;
 	overflow: hidden;
 	cursor: pointer;
 	box-sizing: border-box;
 	background: $gs-green;
+	position: relative;
 	transition: ease all .3s;
 	-moz-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.43);
 	-webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.43);
@@ -358,34 +359,23 @@ header {
 		width: 100%;
 		display: block;
 		overflow: hidden;
+		margin-bottom: 5px;
 		img {
 			display: block;
 			width: 100%;
-			min-height: 95px;
-			max-height: 95px;
 			background-color: #fff;
-			@media screen and (min-width: 450px){
-				min-height: 150px;
-				max-height: 150px;
-			}
 		}
 	}
 	h3 {
-		margin-top: 5px;
-		@media screen and (min-width: 450px){
-			margin-top: 20px;
-		}
+		display: block;
+		margin: 0;
 	}
 	&:hover {
 		color: $gs-green;
 		text-decoration: none;
 		background-color: $gs-blue;
 		h3 {
-			margin-top: 5px;
 			color: $gs-green;
-			@media screen and (min-width: 450px){
-				margin-top: 20px;
-			}
 		}
 	}
 	&:active,

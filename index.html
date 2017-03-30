@@ -81,7 +81,7 @@
 
 					<div ng-controller="ModalDemoCtrl as $ctrl" ng-cloak>
 						<div class="col-xs-6 || col-sm-4 || col-md-3" ng-repeat="work in $ctrl.works track by work.id">
-							<a href="" class="work-item" ng-click="$ctrl.open('lg', work.link)">
+							<a href="#" class="work-item" ng-click="$ctrl.open('lg', work.link)">
 								<div class="frame">
 									<img class="img-responsive" ng-src="{{::work.img}}" alt="{{::work.alt}}">
 								</div>

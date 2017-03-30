@@ -18,7 +18,7 @@ angular.module('gShark')
 			},{
 				id: 002,
 				link: 'work/BeaconHomes.html',
-				img: 'img/work/beaconHomes/BH-HomeThumbnail.jpg',
+				img: 'img/work/beaconHomes/BH-Thumbnail.jpg',
 				alt: 'Beacon Homes Thumbnail',
 				header: 'Beacon Homes Redesign',
 				body: 'Redesign of Beacon Homes builder main website. built in Angular JS functinality and established new branding colors.'
@@ -39,7 +39,7 @@ angular.module('gShark')
 			},{
 				id: 005,
 				link: 'work/ran-shortsale.html',
-				img: 'img/work/utahShortSales/ShortSales-Thumbnail.jpg',
+				img: 'img/work/utahShortSales/USS-Thumbnail.jpg',
 				alt: 'Short Sales Thumbnail',
 				header: 'Utah Short Sales',
 				body: 'Redesign of Beacon Homes builder main website. built in Angular JS functinality and established new branding colors.'
