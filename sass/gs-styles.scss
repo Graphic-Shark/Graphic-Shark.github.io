@@ -533,13 +533,13 @@ header {
 
 .m-main {
 	text-align: left;
-	padding: 0px 15px;
+	padding: 0px;
 	padding-bottom: 15px;
 	box-sizing: border-box;
 	.m-photo {
 		margin: auto;
 		width: 100%;
-		max-width: 750px;
+//		max-width: 750px;
 		margin-bottom: 15px;
 	}
 	.view-site {
@@ -547,6 +547,9 @@ header {
 		text-align: center;
 		padding: 5px 10px;
 		background-color: $gs-green;
+	}
+	p {
+		padding: 50px 30px;
 	}
 }
 

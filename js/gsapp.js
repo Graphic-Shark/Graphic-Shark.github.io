@@ -182,7 +182,7 @@ angular.module('gShark').component('modalComponent', {
 angular.module('gShark')
 .controller('navController', ['$scope', '$location', '$anchorScroll',
 	function($scope, $location, $anchorScroll) {
-		$scope.gotoPortfolio = function() {
+		$scope.goToPortfolio = function() {
 			// set the location.hash to the id of
 			// the element you wish to scroll to.
 			$location.hash('portfolio');
