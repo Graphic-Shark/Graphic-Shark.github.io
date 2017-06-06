@@ -32,9 +32,9 @@ $(document).scroll(function () {
 	var blueLogo = {src: 'img/navbar-Logo.svg'};
 	var blueTri = {'border-color': '#0F4556 transparent transparent transparent'};
 
-	var green = {'background-color' :'#D2DBBD'};
+	var green = {'background-color' :'#e7ebdc'};
 	var greenLogo = {src: 'img/navbar-Logo-I.svg'};
-	var greenTri = {'border-color': '#D2DBBD transparent transparent transparent'};
+	var greenTri = {'border-color': '#e7ebdc transparent transparent transparent'};
 
 	if (docWidth < 645 && y > 370) {
 		$('.navbar').css(blue)

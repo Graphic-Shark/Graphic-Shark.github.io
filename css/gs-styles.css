@@ -5,11 +5,12 @@
   /* IE9 Compat Modes */
   src: url("../fonts/Ailerons-Typeface.eot?#iefix") format("embedded-opentype"), url("../fonts/Ailerons-Typeface.woff2") format("woff2"), url("../fonts/Ailerons-Typeface.woff") format("woff"), url("../fonts/Ailerons-Typeface.ttf") format("truetype"), url("../fonts/Ailerons-Typeface.0tf") format("OpenTypeFormat"), url("../fonts/Ailerons-Typeface.svg#Ailerons") format("svg");
   /* Legacy iOS */ }
+
 body {
   color: #0F4556;
   height: 100%;
   font-family: "Open Sans", sans-serif;
-  background-color: #D2DBBD;
+  background-color: #e7ebdc;
   background-image: url(../img/countourlines-pattern.png); }
 
 h1 {
@@ -35,7 +36,7 @@ h3 {
   font-family: "Ailerons", sans-serif; }
 
 .btn-close {
-  color: #D2DBBD;
+  color: #e7ebdc;
   width: 50px;
   height: 50px;
   top: 10px;
@@ -48,7 +49,7 @@ h3 {
   background-color: #0F4556; }
   .btn-close:hover {
     color: #0F4556;
-    background-color: #D2DBBD; }
+    background-color: #e7ebdc; }
   .btn-close:focus {
     outline: none; }
 
@@ -77,7 +78,7 @@ header {
   position: fixed;
   border-radius: 0;
   transition: ease all .3s;
-  background-color: #D2DBBD; }
+  background-color: #e7ebdc; }
   .navbar img {
     z-index: 2;
     display: block;
@@ -96,7 +97,7 @@ header {
     border-style: solid;
     transition: ease all .3s;
     border-width: 20px 30px 0 30px;
-    border-color: #D2DBBD transparent transparent transparent; }
+    border-color: #e7ebdc transparent transparent transparent; }
 
 .nav-links {
   top: 60px;
@@ -116,7 +117,7 @@ header {
       .nav-links li {
         margin: 10px; } }
     .nav-links li a {
-      color: #D2DBBD;
+      color: #e7ebdc;
       margin: 0px;
       width: 130px;
       padding: 0px 14px;
@@ -140,8 +141,10 @@ header {
 
 .invert .navbar {
   background-color: #0F4556; }
+
 .invert .triangle {
   border-color: #0F4556 transparent transparent transparent; }
+
 .invert .nav-links {
   top: 0px; }
 
@@ -159,10 +162,10 @@ header {
   background-color: #0F4556; }
 
 .nav > li > a {
-  color: #D2DBBD; }
+  color: #e7ebdc; }
   .nav > li > a:hover {
     color: #0F4556;
-    background-color: #D2DBBD; }
+    background-color: #e7ebdc; }
 
 #GS_Medal {
   width: 80%;
@@ -230,6 +233,7 @@ header {
   stroke-dashoffset: 270;
   animation: offset .9s ease-in forwards;
   animation-delay: 1s; }
+
 #Border #Dashed,
 #Border #Dashed_1_ {
   stroke-dasharray: 95;
@@ -240,12 +244,15 @@ header {
 @keyframes reveal {
   to {
     opacity: 1; } }
+
 @keyframes reveal2 {
   to {
     opacity: 0.5; } }
+
 @keyframes offset {
   to {
     stroke-dashoffset: 0; } }
+
 .content {
   color: #0F4556;
   display: block;
@@ -292,7 +299,7 @@ header {
     text-decoration: none;
     background-color: #0F4556; }
     .work-item:hover h3 {
-      color: #91A99C; }
+      color: #e7ebdc; }
   .work-item:active, .work-item:focus {
     text-decoration: none; }
 
@@ -303,7 +310,7 @@ header {
     padding: 5px 0;
     margin-top: 15px;
     display: block;
-    border-bottom: 3px solid #D2DBBD; }
+    border-bottom: 3px solid #e7ebdc; }
   .xp img {
     display: block; }
   .xp h3 {
@@ -314,21 +321,26 @@ header {
     width: 100%; }
   .xp hr {
     margin-top: 5px;
-    border-color: #D2DBBD; }
+    border-color: #e7ebdc; }
 
 .skills tr td p {
   text-align: center;
   padding: 5px;
   border: 3px solid #91A99C;
-  background-color: #D2DBBD; }
+  background-color: #e7ebdc; }
+
 .skills tr:nth-of-type(1) td {
   border: 0; }
+
 .skills .high:before {
   content: "H"; }
+
 .skills .medium:before {
   content: "M"; }
+
 .skills .low:before {
   content: "L"; }
+
 @media screen and (min-width: 1200px) {
   .skills .high:before {
     content: "HIGH"; }
@@ -340,6 +352,7 @@ header {
 @media screen and (max-width: 767px) {
   .table-responsive {
     border: 0; } }
+
 .social {
   padding: 0;
   text-align: center;
@@ -347,7 +360,7 @@ header {
   .social li {
     display: inline-block; }
     .social li a {
-      color: #D2DBBD;
+      color: #e7ebdc;
       display: block;
       margin: 15px;
       padding: 5px 10px;
@@ -358,12 +371,12 @@ header {
       .social li a:hover {
         text-decoration: none;
         color: #0F4556;
-        background: #D2DBBD; }
+        background: #e7ebdc; }
 
 .modal-body,
 .modal-header,
 .modal-footer {
-  background-color: #D2DBBD; }
+  background-color: #e7ebdc; }
 
 .modal-content {
   margin: 0;
@@ -432,5 +445,3 @@ footer {
   @media screen and (max-width: 768px) {
     .absolute footer {
       position: relative; } }
-
-/*# sourceMappingURL=gs-styles.css.map */

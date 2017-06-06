@@ -24,7 +24,7 @@
 $gs-blue: #0F4556;
 $gs-green: #91A99C;
 $gs-green-o: rgba(145, 169, 156, 0.5);
-$gs-beach: #D2DBBD;
+$gs-beach: #e7ebdc;
 
 $gs-header: 'Ailerons', sans-serif;
 $gs-body: 'Open Sans', sans-serif;
@@ -375,7 +375,7 @@ header {
 		text-decoration: none;
 		background-color: $gs-blue;
 		h3 {
-			color: $gs-green;
+			color: $gs-beach;
 		}
 	}
 	&:active,
